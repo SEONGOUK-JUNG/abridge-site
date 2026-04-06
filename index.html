@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ══ 기본 SEO ══ -->
+  <title>에이브릿지 (ABRIDGE) | 글로벌 농산물·전략광물 무역 기업 | 쌀·옥수수·희귀광물 수출입</title>
+  <meta name="description" content="주식회사 에이브릿지는 중국산 쌀 3만 톤·옥수수 30만 톤 수출 쿼터를 보유한 글로벌 농산물·전략광물 무역 기업입니다. 하프늄·리튬·니켈·코발트·희토류 안정적 공급. 광주광역시 소재." />
+  <meta name="keywords" content="에이브릿지,ABRIDGE,농산물무역,쌀수입,옥수수수입,하프늄,희토류,전략광물,리튬,니켈,코발트,글로벌무역,중국농산물,수출입,무역회사,광주무역회사,이세아" />
+  <meta name="author" content="주식회사 에이브릿지" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="google-site-verification" content="F41MiMC3rvZG5oOCMVR8yOyf0wuSOJXp2iRcgfm03ak" />
+  <link rel="canonical" href="https://www.abridge.co.kr/" />
+
+  <!-- ══ Open Graph (SNS 공유) ══ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="에이브릿지 (ABRIDGE)" />
+  <meta property="og:title" content="에이브릿지 | 글로벌 농산물·전략광물 무역 기업" />
+  <meta property="og:description" content="신뢰와 무역으로 세상을 잇는 에이브릿지. 중국산 쌀·옥수수 대규모 쿼터 보유, 하프늄·리튬 등 전략광물 안정 공급." />
+  <meta property="og:url" content="https://www.abridge.co.kr/" />
+  <meta property="og:image" content="https://www.abridge.co.kr/hero.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="ko_KR" />
+
+  <!-- ══ 구조화 데이터 (JSON-LD) ══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "주식회사 에이브릿지",
+    "alternateName": "ABRIDGE Agriculture & Trade Co., Ltd.",
+    "url": "https://www.abridge.co.kr",
+    "logo": "https://www.abridge.co.kr/logo.png",
+    "description": "글로벌 농산물 및 전략광물 무역 기업. 중국산 쌀·옥수수 수출 쿼터 보유, 하프늄·리튬·니켈·코발트·희토류 공급.",
+    "foundingDate": "2025",
+    "founder": { "@type": "Person", "name": "이세아" },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "부남길26번길 21, 1층",
+      "addressLocality": "북구",
+      "addressRegion": "광주광역시",
+      "addressCountry": "KR"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "koreagwangju@gmail.com",
+      "contactType": "customer service",
+      "availableLanguage": ["Korean", "Chinese"]
+    },
+    "sameAs": []
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <style>
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:       #161616;
+      --bg2:      #1e1e1e;
+      --bg3:      #252525;
+      --green:    #4ade80;
+      --green2:   #22c55e;
+      --text:     #f2f2f2;
+      --text2:    #a0a0a0;
+      --text3:    #555;
+      --border:   #2e2e2e;
+      --border2:  #383838;
+      --nav-h:    78px;
+    }
+    html { scroll-behavior: smooth; font-size: 21px; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Pretendard', 'Inter', -apple-system, sans-serif;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: #3a3a3a; border-radius: 3px; }
+
+    /* FADE UP */
+    .fu { opacity: 0; transform: translateY(28px); transition: opacity .65s ease, transform .65s ease; }
+    .fu.on { opacity: 1; transform: translateY(0); }
+    .d1 { transition-delay:.1s } .d2 { transition-delay:.2s }
+    .d3 { transition-delay:.3s } .d4 { transition-delay:.4s }
+    .d5 { transition-delay:.5s }
+
+    /* ══ NAV ══ */
+    nav {
+      position: fixed; top:0; left:0; right:0; height: var(--nav-h);
+      background: rgba(22,22,22,.93);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      z-index: 1000;
+      display: flex; align-items: center; padding: 0 6%;
+    }
+    .nav-inner { width:100%; max-width:1380px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; }
+    .logo-wrap { display:flex; align-items:center; gap:11px; }
+    .logo-img { height:140px; width:auto; display:block; }
+    .logo-mobile { display:none; }
+    .logo-txt { display:flex; flex-direction:column; gap:2px; }
+    .logo-main { font-size:1.55rem; font-weight:900; letter-spacing:3px; }
+    .logo-main em {
+      display:inline-block; width:0.75em; height:0.75em;
+      background:var(--green); border-radius:50%;
+      vertical-align:middle; margin-left:2px; font-style:normal;
+      animation: rainbow 5s infinite linear;
+    }
+    .logo-sub { font-size:.6rem; letter-spacing:1.8px; color:var(--text2); text-transform:uppercase; }
+    .nav-links { display:flex; gap:2.2rem; list-style:none; }
+    .nav-links a { font-size:.83rem; font-weight:500; color:var(--text2); transition:color .2s; }
+    .nav-links a:hover { color:var(--green); }
+    .nav-right { display:flex; align-items:center; gap:.9rem; }
+    .nav-cta {
+      background:var(--green); color:#0a0a0a; font-weight:800;
+      font-size:.8rem; padding:9px 22px; border-radius:4px; letter-spacing:.5px;
+      transition:opacity .2s;
+    }
+    .nav-cta:hover { opacity:.82; }
+    .burger { display:none; flex-direction:column; gap:5px; cursor:pointer; padding:4px; }
+    .burger span { display:block; width:24px; height:2px; background:var(--text); border-radius:2px; transition:all .3s; }
+    .m-menu {
+      display:none; position:fixed; top:var(--nav-h); left:0; right:0;
+      background:rgba(20,20,20,.98); border-bottom:1px solid var(--border);
+      padding:1.8rem 6%; flex-direction:column; gap:1.3rem; z-index:999;
+    }
+    .m-menu.open { display:flex; }
+    .m-menu a { font-size:.95rem; font-weight:500; color:var(--text2); border-bottom:1px solid var(--border); padding-bottom:1.1rem; }
+    .m-menu a:hover { color:var(--green); }
+
+    /* ══ HERO ══ */
+    #hero {
+      min-height:100vh; padding-top:var(--nav-h);
+      position:relative; display:flex; align-items:center; overflow:hidden;
+    }
+    .hero-bg {
+      position:absolute; inset:0;
+      background:
+        linear-gradient(105deg, rgba(22,22,22,1) 0%, rgba(22,22,22,.88) 45%, rgba(22,22,22,.25) 100%),
+        url('hero.png') center/cover no-repeat;
+    }
+    .hero-wrap {
+      position:relative; z-index:1; width:100%; max-width:1380px;
+      margin:0 auto; padding:0 6%;
+      display:grid; grid-template-columns:1fr 360px; gap:3.5rem; align-items:center;
+    }
+    .hero-badge {
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(74,222,128,.1); border:1px solid rgba(74,222,128,.28);
+      padding:6px 16px; border-radius:20px;
+      font-size:.7rem; font-weight:800; letter-spacing:2.5px;
+      color:var(--green); text-transform:uppercase; margin-bottom:1.6rem;
+    }
+    .hero-badge::before {
+      content:''; width:6px; height:6px; background:var(--green); border-radius:50%;
+      animation: blink 2s infinite;
+    }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
+    @keyframes rainbow {
+      0%   { background:#ff0000; }
+      14%  { background:#ff7700; }
+      28%  { background:#ffee00; }
+      42%  { background:#00cc44; }
+      57%  { background:#0088ff; }
+      71%  { background:#4400cc; }
+      85%  { background:#8800cc; }
+      100% { background:#ff0000; }
+    }
+    h1.hero-title {
+      font-size: clamp(2.5rem,5.2vw,4.4rem);
+      font-weight:900; line-height:1.08; letter-spacing:-1.5px; margin-bottom:1.6rem;
+    }
+    h1.hero-title .green { color:var(--green); }
+    .hero-sub {
+      font-size:1rem; color:var(--text2); max-width:500px;
+      line-height:1.85; margin-bottom:2.5rem;
+    }
+    .hero-btns { display:flex; gap:1rem; flex-wrap:wrap; }
+    .btn-p {
+      background:var(--green); color:#0a0a0a; font-weight:800;
+      padding:14px 34px; border-radius:5px; font-size:.88rem; letter-spacing:.4px; transition:opacity .2s;
+    }
+    .btn-p:hover { opacity:.82; }
+    .btn-o {
+      border:1px solid var(--border2); color:var(--text); padding:14px 34px;
+      border-radius:5px; font-size:.88rem; font-weight:500; transition:all .2s;
+    }
+    .btn-o:hover { border-color:var(--green); color:var(--green); }
+
+    /* Stat Cards */
+    .hero-stats { display:flex; flex-direction:column; gap:1rem; }
+    .stat-card {
+      background:rgba(30,30,30,.9); backdrop-filter:blur(10px);
+      border:1px solid var(--border2); border-radius:12px; padding:1.4rem 1.6rem;
+    }
+    .stat-n { font-size:2.8rem; font-weight:900; color:var(--green); letter-spacing:-1px; line-height:1.1; }
+    .stat-n sub { font-size:1.2rem; }
+    .stat-l { font-size:1rem; color:var(--text2); margin-top:5px; line-height:1.5; }
+
+    /* Scroll indicator */
+    .scroll-ind {
+      position:absolute; bottom:2.2rem; left:50%; transform:translateX(-50%);
+      display:flex; flex-direction:column; align-items:center; gap:7px; z-index:1;
+    }
+    .scroll-ind span { font-size:.65rem; letter-spacing:2.5px; color:var(--text3); text-transform:uppercase; }
+    .scroll-line {
+      width:1px; height:42px;
+      background:linear-gradient(to bottom,var(--green),transparent);
+      animation:scrl 2.2s infinite;
+    }
+    @keyframes scrl {
+      0%{transform:scaleY(0);transform-origin:top}
+      50%{transform:scaleY(1);transform-origin:top}
+      100%{transform:scaleY(1);transform-origin:bottom;opacity:0}
+    }
+
+    /* ══ CAT BAR ══ */
+    .cat-bar { background:var(--bg2); border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:1.4rem 6%; }
+    .cat-bar-inner { max-width:1380px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); }
+    .cat-item { display:flex; align-items:center; gap:12px; padding:.9rem 1.4rem; border-right:1px solid var(--border); }
+    .cat-item:last-child { border-right:none; }
+    .cat-ico {
+      width:38px; height:38px; flex-shrink:0;
+      background:rgba(74,222,128,.08); border:1px solid rgba(74,222,128,.18);
+      border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1.1rem;
+    }
+    .cat-txt strong { display:block; font-size:1.05rem; font-weight:700; }
+    .cat-txt span { font-size:.9rem; color:var(--text2); }
+
+    /* ══ SECTION BASE ══ */
+    section { padding:7rem 6%; }
+    .inner { max-width:1380px; margin:0 auto; }
+    .s-label {
+      font-size:.7rem; font-weight:800; letter-spacing:3px;
+      color:var(--green); text-transform:uppercase; margin-bottom:.9rem;
+      display:flex; align-items:center; gap:10px;
+    }
+    .s-label::before { content:''; width:22px; height:2px; background:var(--green); }
+    .s-title { font-size:clamp(1.9rem,3.5vw,2.9rem); font-weight:900; line-height:1.2; margin-bottom:1.1rem; }
+    .s-desc { font-size:.97rem; color:var(--text2); max-width:580px; line-height:1.85; }
+
+    /* ══ ABOUT ══ */
+    #about { background:var(--bg); }
+    .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center; }
+    .about-img-wrap { position:relative; border-radius:16px; overflow:hidden; aspect-ratio:3/4; }
+    .about-img-wrap img { width:100%; height:100%; object-fit:cover; }
+    .about-badge {
+      position:absolute; bottom:1.4rem; left:1.4rem;
+      background:rgba(18,18,18,.93); backdrop-filter:blur(8px);
+      border:1px solid var(--border2); padding:.9rem 1.3rem; border-radius:10px;
+    }
+    .about-badge strong { display:block; font-size:1.5rem; font-weight:900; color:var(--green); }
+    .about-badge span { font-size:.68rem; color:var(--text2); letter-spacing:.5px; }
+    .about-body { font-size:.96rem; color:var(--text2); line-height:1.95; margin:1.4rem 0 2.2rem; }
+    .about-body strong { color:var(--text); }
+    .vals { display:grid; grid-template-columns:1fr 1fr; gap:.9rem; }
+    .val-card {
+      background:var(--bg2); border:1px solid var(--border);
+      border-radius:10px; padding:1.2rem;
+      transition:background .2s, border-color .2s;
+    }
+    .val-card:hover { background:var(--bg3); border-color:rgba(74,222,128,.3); }
+    .val-card .ico { font-size:1.35rem; margin-bottom:.5rem; }
+    .val-card strong { display:block; font-size:1rem; font-weight:700; margin-bottom:3px; }
+    .val-card p { font-size:.88rem; color:var(--text2); line-height:1.6; }
+
+    /* ══ BUSINESS ══ */
+    #business { background:var(--bg2); }
+    .tabs { display:flex; border-bottom:1px solid var(--border); margin-bottom:2.5rem; }
+    .tab {
+      padding:11px 26px; font-size:.83rem; font-weight:600;
+      color:var(--text2); border-bottom:2px solid transparent; margin-bottom:-1px;
+      cursor:pointer; transition:all .2s; letter-spacing:.4px; background:none; border-top:none; border-left:none; border-right:none;
+    }
+    .tab.on { color:var(--green); border-bottom-color:var(--green); }
+    .tab:hover:not(.on) { color:var(--text); }
+    .tc { display:none; } .tc.on { display:block; }
+    .biz-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.4rem; }
+    .biz-card {
+      background:var(--bg); border:1px solid var(--border);
+      border-radius:12px; overflow:hidden;
+      transition:transform .25s, box-shadow .25s;
+    }
+    .biz-card:hover { transform:translateY(-5px); box-shadow:0 14px 40px rgba(0,0,0,.45); }
+    .biz-img { height:195px; overflow:hidden; }
+    .biz-img img { width:100%; height:100%; object-fit:cover; transition:transform .4s; }
+    .biz-card:hover .biz-img img { transform:scale(1.06); }
+    .biz-body { padding:1.4rem; }
+    .biz-tag {
+      display:inline-block; font-size:.62rem; font-weight:800; letter-spacing:2px;
+      text-transform:uppercase; color:var(--green);
+      background:rgba(74,222,128,.09); border:1px solid rgba(74,222,128,.2);
+      padding:3px 10px; border-radius:20px; margin-bottom:.75rem;
+    }
+    .biz-body h3 { font-size:1.1rem; font-weight:700; margin-bottom:.45rem; }
+    .biz-body p { font-size:.92rem; color:var(--text2); line-height:1.65; }
+    .biz-spec { margin-top:.9rem; border-top:1px solid var(--border); padding-top:.9rem; }
+    .spec-row {
+      display:flex; justify-content:space-between;
+      padding:4px 0; font-size:.76rem; border-bottom:1px solid var(--border);
+    }
+    .spec-row:last-child { border-bottom:none; }
+    .spec-row span:first-child { color:var(--text2); }
+    .spec-row span:last-child { font-weight:600; }
+
+    /* ══ ACHIEVEMENTS ══ */
+    #achievements { background:var(--bg); }
+    .ach-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.8rem; margin-top:2.8rem; }
+    .ach-card {
+      background:var(--bg2); border:1px solid var(--border);
+      border-radius:16px; overflow:hidden;
+      transition:transform .25s, border-color .25s;
+    }
+    .ach-card:hover { transform:translateY(-5px); border-color:rgba(74,222,128,.3); }
+    .ach-head {
+      background:linear-gradient(135deg,#1f1f1f,#1a1a1a);
+      padding:1.8rem; border-bottom:1px solid var(--border); position:relative; overflow:hidden;
+    }
+    .ach-head::after {
+      content:''; position:absolute; top:-25px; right:-25px;
+      width:90px; height:90px; background:rgba(74,222,128,.04); border-radius:50%;
+    }
+    .ach-num { font-size:2.6rem; font-weight:900; color:var(--green); letter-spacing:-2px; line-height:1; }
+    .ach-num sub { font-size:1.1rem; }
+    .ach-sub-lbl { font-size:.68rem; color:var(--text2); letter-spacing:1px; text-transform:uppercase; margin-top:4px; }
+    .ach-body { padding:1.6rem; }
+    .ach-body h3 { font-size:1.15rem; font-weight:800; margin-bottom:.7rem; line-height:1.45; }
+    .ach-body p { font-size:.95rem; color:var(--text2); line-height:1.8; margin-bottom:.9rem; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; }
+    .tag {
+      font-size:.63rem; font-weight:700; padding:3px 10px;
+      border-radius:20px; letter-spacing:.4px;
+    }
+    .tag.g { background:rgba(74,222,128,.11); color:var(--green); border:1px solid rgba(74,222,128,.22); }
+    .tag.gr { background:var(--bg3); color:var(--text2); border:1px solid var(--border); }
+
+    /* ══ VISION ══ */
+    #vision { background:var(--bg2); }
+    .vision-grid { display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:start; margin-top:2.8rem; }
+    .v-sub-title { font-size:1.05rem; font-weight:800; margin-bottom:1.8rem; }
+    .mbars { display:flex; flex-direction:column; gap:1.3rem; }
+    .mbar-top { display:flex; justify-content:space-between; font-size:.8rem; margin-bottom:6px; }
+    .mbar-top span:first-child { color:var(--text2); }
+    .mbar-top span:last-child { color:var(--green); font-weight:700; }
+    .bar-track { height:5px; background:var(--bg3); border-radius:3px; overflow:hidden; }
+    .bar-fill { height:100%; background:linear-gradient(90deg,var(--green2),var(--green)); border-radius:3px; width:0; transition:width 1.6s cubic-bezier(.4,0,.2,1); }
+    .tl { display:flex; flex-direction:column; }
+    .tl-item { display:flex; gap:1.4rem; }
+    .tl-side { display:flex; flex-direction:column; align-items:center; flex-shrink:0; }
+    .tl-dot { width:11px; height:11px; border-radius:50%; background:var(--border2); border:2px solid var(--border2); margin-top:4px; transition:all .3s; }
+    .tl-item:hover .tl-dot { background:var(--green); border-color:var(--green); }
+    .tl-conn { flex:1; width:1px; background:var(--border); margin:3px 0; min-height:38px; }
+    .tl-item:last-child .tl-conn { display:none; }
+    .tl-body { padding-bottom:1.8rem; }
+    .tl-yr { font-size:.66rem; font-weight:800; color:var(--green); letter-spacing:2px; margin-bottom:3px; }
+    .tl-body h4 { font-size:.9rem; font-weight:700; margin-bottom:3px; }
+    .tl-body p { font-size:.78rem; color:var(--text2); line-height:1.65; }
+
+    /* ══ PARTNERS ══ */
+    #partners { background:var(--bg); }
+    .p-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.4rem; margin-top:2.8rem; }
+    .p-card {
+      background:var(--bg2); border:1px solid var(--border); border-radius:12px;
+      padding:1.7rem; display:flex; gap:1.1rem; align-items:flex-start;
+      transition:border-color .2s, background .2s;
+    }
+    .p-card:hover { border-color:rgba(74,222,128,.3); background:var(--bg3); }
+    .p-num {
+      width:34px; height:34px; background:var(--green); color:#0a0a0a;
+      font-weight:900; font-size:.82rem; border-radius:6px;
+      display:flex; align-items:center; justify-content:center; flex-shrink:0;
+    }
+    .p-info h4 { font-size:1.05rem; font-weight:700; margin-bottom:3px; }
+    .p-info p { font-size:.92rem; color:var(--text2); margin-bottom:.7rem; line-height:1.55; }
+    .p-tags { display:flex; flex-wrap:wrap; gap:5px; }
+    .pt {
+      font-size:.62rem; font-weight:700; padding:3px 9px;
+      border-radius:20px; letter-spacing:.3px;
+    }
+    .pt.g { background:rgba(74,222,128,.1); color:var(--green); border:1px solid rgba(74,222,128,.2); }
+    .pt.gr { background:var(--bg3); color:var(--text2); border:1px solid var(--border); }
+
+    /* ══ CONTACT ══ */
+    #contact { background:var(--bg2); }
+    .c-grid { display:grid; grid-template-columns:1fr 1.35fr; gap:4rem; margin-top:2.8rem; }
+    .c-cards { display:grid; grid-template-columns:1fr 1fr; gap:.9rem; align-content:start; }
+    .c-card {
+      background:var(--bg); border:1px solid var(--border); border-radius:12px; padding:1.4rem;
+      transition:border-color .2s;
+    }
+    .c-card:hover { border-color:rgba(74,222,128,.28); }
+    .c-card .ico { font-size:1.4rem; margin-bottom:.7rem; }
+    .c-card h4 { font-size:.9rem; font-weight:800; color:var(--text2); margin-bottom:3px; letter-spacing:.5px; text-transform:uppercase; }
+    .c-card p { font-size:.97rem; line-height:1.6; }
+    .c-form { background:var(--bg); border:1px solid var(--border); border-radius:16px; padding:2.4rem; }
+    .c-form h3 { font-size:1.15rem; font-weight:800; margin-bottom:1.4rem; }
+    .f-row { display:grid; grid-template-columns:1fr 1fr; gap:.9rem; }
+    .fg { margin-bottom:1.1rem; }
+    .fg label { display:block; font-size:.75rem; font-weight:700; color:var(--text2); margin-bottom:5px; letter-spacing:.4px; }
+    .fg input, .fg textarea, .fg select {
+      width:100%; background:var(--bg2); border:1px solid var(--border2);
+      border-radius:6px; padding:10px 13px; color:var(--text);
+      font-family:inherit; font-size:.86rem; outline:none; transition:border-color .2s;
+    }
+    .fg input:focus, .fg textarea:focus, .fg select:focus { border-color:var(--green); }
+    .fg textarea { height:115px; resize:vertical; }
+    .fg select option { background:var(--bg2); }
+    .f-btn {
+      width:100%; background:var(--green); color:#0a0a0a;
+      font-weight:800; font-size:.88rem; padding:14px;
+      border-radius:6px; letter-spacing:.4px; transition:opacity .2s; cursor:pointer; border:none;
+    }
+    .f-btn:hover { opacity:.82; }
+
+    /* ══ FOOTER ══ */
+    footer { background:#0d0d0d; border-top:1px solid var(--border); padding:4rem 6% 2rem; }
+    .f-inner { max-width:1380px; margin:0 auto; }
+    .f-top { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:3rem; padding-bottom:2.8rem; border-bottom:1px solid var(--border); }
+    .f-brand .lm { font-size:1.4rem; font-weight:900; letter-spacing:3px; margin-bottom:.7rem; }
+    .f-brand .lm em { color:var(--green); font-style:normal; }
+    .f-brand p { font-size:.92rem; color:var(--text2); line-height:1.85; max-width:290px; }
+    .f-links h5 { font-size:.85rem; font-weight:800; letter-spacing:2px; color:var(--text2); text-transform:uppercase; margin-bottom:1.1rem; }
+    .f-links ul { list-style:none; display:flex; flex-direction:column; gap:.65rem; }
+    .f-links ul li a { font-size:.92rem; color:var(--text3); transition:color .2s; }
+    .f-links ul li a:hover { color:var(--green); }
+    .f-bottom { display:flex; justify-content:space-between; align-items:center; padding-top:1.8rem; font-size:.76rem; color:var(--text3); }
+
+    /* ══ RESPONSIVE ══ */
+    @media(max-width:1024px){
+      .hero-wrap { grid-template-columns:1fr; }
+      .hero-stats { display:flex; flex-direction:column; gap:.7rem; margin-top:1.5rem; }
+      .about-grid, .vision-grid { grid-template-columns:1fr; }
+      .biz-grid { grid-template-columns:1fr 1fr; }
+      .ach-grid { grid-template-columns:1fr 1fr; }
+      .p-grid { grid-template-columns:1fr; }
+      .c-grid { grid-template-columns:1fr; }
+      .f-top { grid-template-columns:1fr 1fr; }
+      .cat-bar-inner { grid-template-columns:1fr 1fr; }
+    }
+    @media(max-width:768px){
+      html { font-size:16px; }
+      :root { --nav-h:90px; }
+      .logo-mobile { display:block; height:120px; }
+      .logo-sub { display:none; }
+      .logo-wrap { gap:2px; }
+      .stat-n { font-size:1.8rem; }
+      .stat-l { font-size:.8rem; }
+      .stat-card { padding:1rem 1.2rem; }
+      .logo-desktop { display:none; }
+      .nav-links, .nav-right { display:none; }
+      .burger { display:flex; }
+      section { padding:3.5rem 5%; }
+      .biz-grid, .ach-grid { grid-template-columns:1fr; }
+      .vals { grid-template-columns:1fr 1fr; }
+      .f-row { grid-template-columns:1fr; }
+      .c-cards { grid-template-columns:1fr 1fr; }
+      .f-top { grid-template-columns:1fr 1fr; gap:1.5rem; }
+      .f-bottom { flex-direction:column; gap:.5rem; text-align:center; }
+      .about-img-wrap { aspect-ratio:16/9; }
+      .vision-grid { gap:2.5rem; }
+      .c-grid { gap:2rem; }
+      .hero-btns { flex-direction:column; }
+      .btn-p, .btn-o { text-align:center; padding:15px 28px; }
+      h1.hero-title { font-size:clamp(2rem,8vw,3rem); }
+      .hero-sub { font-size:.92rem; }
+      .cat-bar-inner { grid-template-columns:1fr 1fr; gap:0; }
+      .cat-item { padding:.7rem 1rem; }
+      .ach-num { font-size:2.1rem; }
+    }
+    @media(max-width:480px){
+      html { font-size:15px; }
+      :root { --nav-h:90px; }
+      .logo-mobile { height:120px; }
+      section { padding:3rem 4%; }
+      .cat-bar-inner { grid-template-columns:1fr 1fr; }
+      .cat-item { padding:.6rem .8rem; gap:8px; }
+      .cat-ico { width:32px; height:32px; font-size:.95rem; }
+      .cat-txt strong { font-size:.9rem; }
+      .cat-txt span { font-size:.78rem; }
+      .hero-badge { font-size:.62rem; letter-spacing:1.5px; margin-top:2rem; }
+      h1.hero-title { font-size:clamp(1.75rem,8.5vw,2.5rem); letter-spacing:-0.5px; }
+      .vals { grid-template-columns:1fr; }
+      .c-cards { grid-template-columns:1fr; }
+      .c-card { display:flex; align-items:center; gap:.8rem; padding:.9rem 1rem; }
+      .c-card .ico { font-size:1.2rem; margin-bottom:0; flex-shrink:0; }
+      .c-card h4 { font-size:.78rem; margin-bottom:1px; }
+      .c-card p { font-size:.85rem; line-height:1.4; }
+      .stat-n { font-size:2.2rem; }
+      .c-form { padding:1.5rem; }
+      .ach-head { padding:1.3rem; }
+      .ach-body { padding:1.2rem; }
+      .f-btn { font-size:.85rem; padding:15px; }
+      .logo-main { font-size:1.3rem; }
+      .logo-sub { font-size:.52rem; }
+      .biz-img { height:160px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <div class="nav-inner">
+    <a href="#hero" class="logo-wrap">
+      <img src="logo.png" alt="ABRIDGE 로고" class="logo-img logo-mobile" />
+      <div class="logo-txt">
+        <span class="logo-main">ABRIDGE<em></em></span>
+        <span class="logo-sub">Agriculture &amp; Trade Co., Ltd.</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">소개</a></li>
+      <li><a href="#business">사업분야</a></li>
+      <li><a href="#achievements">주요성과</a></li>
+      <li><a href="#vision">비전</a></li>
+      <li><a href="#partners">파트너</a></li>
+      <li><a href="#contact">문의</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="#contact" class="nav-cta">문의하기</a>
+      <img src="logo.png" alt="ABRIDGE 로고" class="logo-img logo-desktop" />
+    </div>
+    <div class="burger" id="burger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+<div class="m-menu" id="mmenu">
+  <a href="#about" onclick="cm()">소개</a>
+  <a href="#business" onclick="cm()">사업분야</a>
+  <a href="#achievements" onclick="cm()">주요성과</a>
+  <a href="#vision" onclick="cm()">비전</a>
+  <a href="#partners" onclick="cm()">파트너</a>
+  <a href="#contact" onclick="cm()">문의</a>
+</div>
+
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-wrap">
+    <div>
+      <div class="hero-badge fu">Global Agriculture &amp; Strategic Resources</div>
+      <h1 class="hero-title fu d1">
+        The Path to<br/>
+        <span class="green">Sustainable</span><br/>
+        Future
+      </h1>
+      <p class="hero-sub fu d2">
+        신뢰와 무역으로 세상을 잇는 에이브릿지.<br/>
+        한국과 중국을 거점으로 농산물과 전략자원을 안정적으로<br/>공급하며,<br/>
+        지속 가능한 글로벌 공급망을 구축합니다.
+      </p>
+      <div class="hero-btns fu d3">
+        <a href="#about" class="btn-p">회사 소개</a>
+        <a href="#contact" class="btn-o">문의하기</a>
+      </div>
+    </div>
+    <div class="hero-stats fu d2">
+      <div class="stat-card">
+        <div class="stat-n">30,000<sub>톤</sub></div>
+        <div class="stat-l">중국산 쌀 공식 수출 쿼터 확보</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-n">300,000<sub>톤</sub></div>
+        <div class="stat-l">옥수수 해외 수출 쿼터 확보</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-n">5+</div>
+        <div class="stat-l">전략광물 품목<br/>하프늄 · 리튬 · 니켈 · 코발트 · 희토류</div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-ind">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- Category Bar -->
+<div class="cat-bar">
+  <div class="cat-bar-inner">
+    <div class="cat-item fu"><div class="cat-ico">🌾</div><div class="cat-txt"><strong>농산물 무역</strong><span>쌀 · 옥수수 · 버섯</span></div></div>
+    <div class="cat-item fu d1"><div class="cat-ico">💎</div><div class="cat-txt"><strong>전략광물 공급</strong><span>하프늄 · 리튬 · 희토류</span></div></div>
+    <div class="cat-item fu d2"><div class="cat-ico">🌏</div><div class="cat-txt"><strong>한·중 공급망</strong><span>지속 가능한 자원순환 네트워크</span></div></div>
+    <div class="cat-item fu d3"><div class="cat-ico">🤝</div><div class="cat-txt"><strong>신뢰 기반 무역</strong><span>투명한 글로벌 파트너십</span></div></div>
+  </div>
+</div>
+
+<!-- ══ ABOUT ══ -->
+<section id="about">
+  <div class="inner">
+    <div class="about-grid">
+      <div class="about-img-wrap fu">
+        <img src="rice.png" alt="에이브릿지 농산물" loading="lazy"/>
+      </div>
+      <div>
+        <div class="s-label fu">About ABRIDGE</div>
+        <h2 class="s-title fu d1">Bridge the World<br/>with Trust &amp; Trade</h2>
+        <p class="about-body fu d2">
+          에이브릿지(Abridge)는 <strong>우수한 품질의 농산물과 첨단 산업에 필수적인 희귀광물</strong>을 안정적으로 공급하는 글로벌 무역 기업입니다.<br/><br/>
+          한국과 중국을 거점으로 안정적인 공급망과 품질 중심의 거래 시스템을 운영하며, 에너지·소재·식품 산업 전반에 걸쳐 지속 가능한 자원 순환 구조를 만들어가고 있습니다.<br/><br/>
+          신뢰와 투명성을 바탕으로, 국가 간 자원 협력을 촉진하고 미래 산업의 성장 기반을 함께 구축하는 <strong>글로벌 브리지(Bridge)</strong>로 성장할 것입니다.
+        </p>
+        <div class="vals fu d3">
+          <div class="val-card"><div class="ico">🌱</div><strong>지속 가능성</strong><p>지속 가능한 자원 순환 공급망으로 미래 세대를 위한 무역을 실천합니다.</p></div>
+          <div class="val-card"><div class="ico">🔒</div><strong>신뢰와 투명성</strong><p>투명한 거래 시스템으로 파트너와의 신뢰 기반 관계를 구축합니다.</p></div>
+          <div class="val-card"><div class="ico">🌐</div><strong>글로벌 네트워크</strong><p>한국·중국을 중심으로 아시아 전역의 공급망 네트워크를 확장합니다.</p></div>
+          <div class="val-card"><div class="ico">⚡</div><strong>안정적 공급</strong><p>원광 확보부터 정제·유통까지 전 과정 통합 시스템을 운영합니다.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BUSINESS ══ -->
+<section id="business">
+  <div class="inner">
+    <div class="s-label fu">Business Areas</div>
+    <h2 class="s-title fu d1">주요 사업 분야</h2>
+    <p class="s-desc fu d2">농산물 무역과 전략광물 공급이라는 두 축을 중심으로<br/>에너지·식품·소재 산업을 아우르는 통합 공급망을 제공합니다.</p>
+    <div class="tabs fu d2" style="margin-top:2rem">
+      <button class="tab on" onclick="switchTab('agri',this)">🌾 농산물 무역</button>
+      <button class="tab" onclick="switchTab('mineral',this)">💎 전략광물 공급</button>
+    </div>
+    <div class="tc on" id="tc-agri">
+      <div class="biz-grid">
+        <div class="biz-card fu">
+          <div class="biz-img"><img src="rice1.png" alt="쌀" loading="lazy"/></div>
+          <div class="biz-body">
+            <span class="biz-tag">주요품목</span>
+            <h3>중국산 쌀 (Rice)</h3>
+            <p>중국 정부로부터 공식 수출 쿼터를 확보하여 한국 및 아시아 시장에 안정적으로 공급합니다.</p>
+            <div class="biz-spec">
+              <div class="spec-row"><span>확보 쿼터</span><span>30,000톤</span></div>
+              <div class="spec-row"><span>대상 시장</span><span>한국 · 아시아</span></div>
+              <div class="spec-row"><span>공급 방식</span><span>공식 정부 쿼터</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="biz-card fu d1">
+          <div class="biz-img"><img src="cone.png" alt="옥수수" loading="lazy"/></div>
+          <div class="biz-body">
+            <span class="biz-tag">주요품목</span>
+            <h3>옥수수 (Corn)</h3>
+            <p>중국 현지 파트너와의 전략적 협력을 통해 대규모 옥수수 수출 쿼터를 확보했습니다.</p>
+            <div class="biz-spec">
+              <div class="spec-row"><span>확보 쿼터</span><span>300,000톤</span></div>
+              <div class="spec-row"><span>대상 시장</span><span>한국 · 아시아</span></div>
+              <div class="spec-row"><span>파트너십</span><span>중국 현지 전략 파트너</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="biz-card fu d2">
+          <div class="biz-img"><img src="mushroom.png" alt="버섯" loading="lazy"/></div>
+          <div class="biz-body">
+            <span class="biz-tag">주요품목</span>
+            <h3>버섯류 (Mushroom)</h3>
+            <p>고품질 식용 버섯류를 중국에서 직접 수입하여 한국 식품 시장에 공급합니다.</p>
+            <div class="biz-spec">
+              <div class="spec-row"><span>품목</span><span>표고 · 영지 · 목이버섯</span></div>
+              <div class="spec-row"><span>원산지</span><span>중국</span></div>
+              <div class="spec-row"><span>품질 기준</span><span>식품 안전 인증</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tc" id="tc-mineral">
+      <div class="biz-grid">
+        <div class="biz-card fu">
+          <div class="biz-img"><img src="hafnium.png" alt="하프늄" loading="lazy"/></div>
+          <div class="biz-body">
+            <span class="biz-tag">전략광물</span>
+            <h3>하프늄 (Hafnium)</h3>
+            <p>반도체·항공우주·원자력·신소재 산업에 필수적인 희귀금속. 원광 확보부터 정제·유통까지 통합 공급합니다.</p>
+            <div class="biz-spec">
+              <div class="spec-row"><span>주요 용도</span><span>반도체 · 항공우주 · 원자력</span></div>
+              <div class="spec-row"><span>공급 방식</span><span>전 과정 통합 시스템</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="biz-card fu d1">
+          <div class="biz-img"><img src="mineral.png" alt="리튬 니켈 코발트" loading="lazy"/></div>
+          <div class="biz-body">
+            <span class="biz-tag">전략광물</span>
+            <h3>리튬 · 니켈 · 코발트</h3>
+            <p>전기차·배터리·에너지 저장 산업의 핵심 원자재. 중국 전략 파트너를 통해 안정적으로 공급합니다.</p>
+            <div class="biz-spec">
+              <div class="spec-row"><span>주요 용도</span><span>배터리 · 에너지저장 · 전기차</span></div>
+              <div class="spec-row"><span>공급원</span><span>중국 전략 파트너사</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="biz-card fu d2">
+          <div class="biz-img"><img src="ree.png" alt="희토류" loading="lazy"/></div>
+          <div class="biz-body">
+            <span class="biz-tag">전략광물</span>
+            <h3>희토류 원소 (REE)</h3>
+            <p>첨단 산업에 필수적인 희토류 원소를 중국 협력사를 통해 안정적으로 공급하여 글로벌 공급망을 강화합니다.</p>
+            <div class="biz-spec">
+              <div class="spec-row"><span>주요 용도</span><span>전자 · 방위 · 친환경 기술</span></div>
+              <div class="spec-row"><span>공급원</span><span>중국 현지 파트너</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ACHIEVEMENTS ══ -->
+<section id="achievements">
+  <div class="inner">
+    <div class="s-label fu">Key Achievements</div>
+    <h2 class="s-title fu d1">주요 성과</h2>
+    <p class="s-desc fu d2">에이브릿지는 설립 이후 한·중 간 대규모 무역 쿼터 확보와 전략광물 공급망 구축을 통해 글로벌 시장에서의 입지를 다지고 있습니다.</p>
+    <div class="ach-grid">
+      <div class="ach-card fu d1">
+        <div class="ach-head">
+          <div class="ach-num">3만<sub>톤</sub></div>
+          <div class="ach-sub-lbl">중국산 쌀 수출 쿼터 확보</div>
+        </div>
+        <div class="ach-body">
+          <h3>중국 정부 공식 쌀 수출 쿼터 확보</h3>
+          <p>에이브릿지는 중국 정부로부터 중국산 쌀 해외 수출 3만 톤 규모의 공식 쿼터(Quota)를 확보했습니다. 이번 성과는 한국을 비롯한 아시아 주요 시장에 대한 식량 공급 안정화와 무역 다변화 전략의 일환으로 추진되었습니다.</p>
+          <div class="tags">
+            <span class="tag g">공식 정부 쿼터</span>
+            <span class="tag gr">식량 안보</span>
+            <span class="tag gr">한·중 무역</span>
+          </div>
+        </div>
+      </div>
+      <div class="ach-card fu d2">
+        <div class="ach-head">
+          <div class="ach-num">30만<sub>톤</sub></div>
+          <div class="ach-sub-lbl">옥수수 수출 쿼터 확보</div>
+        </div>
+        <div class="ach-body">
+          <h3>글로벌 곡물 공급 안정화 핵심 파트너</h3>
+          <p>중국 현지 파트너사와의 전략적 협력을 통해 옥수수(Corn) 30만 톤 규모의 해외 수출 쿼터를 성공적으로 확보했습니다. 국제 식량 수급 불안정이 심화되는 가운데 한국 및 아시아 시장의 곡물 공급 안정화를 위한 중요한 이정표입니다.</p>
+          <div class="tags">
+            <span class="tag g">전략 파트너십</span>
+            <span class="tag gr">곡물 공급망</span>
+            <span class="tag gr">아시아 시장</span>
+          </div>
+        </div>
+      </div>
+      <div class="ach-card fu d3">
+        <div class="ach-head">
+          <div class="ach-num">5+</div>
+          <div class="ach-sub-lbl">전략 희귀광물 공급 품목</div>
+        </div>
+        <div class="ach-body">
+          <h3>하프늄 등 희귀광물 안정적 공급 시스템 구축</h3>
+          <p>중국 현지의 전략적 파트너사들과 협력하여 하프늄(Hafnium)을 비롯한 리튬, 니켈, 코발트, 희토류 등 첨단 산업용 희귀광물을 안정적으로 공급합니다. 원광 확보부터 정제·유통까지 전 과정 통합 시스템으로 운영합니다.</p>
+          <div class="tags">
+            <span class="tag g">통합 공급 시스템</span>
+            <span class="tag gr">희귀광물</span>
+            <span class="tag gr">첨단 산업</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ VISION ══ -->
+<section id="vision">
+  <div class="inner">
+    <div class="s-label fu">Vision &amp; Roadmap</div>
+    <h2 class="s-title fu d1">성장 비전</h2>
+    <p class="s-desc fu d2">에이브릿지는 글로벌 농산물·자원 무역의 새로운 표준을 만들며 아시아를 넘어 세계로 나아갑니다.</p>
+    <div class="vision-grid">
+      <div class="fu d1">
+        <div class="v-sub-title">시장 성장 전망</div>
+        <div class="mbars">
+          <div><div class="mbar-top"><span>농산물 무역 규모</span><span>₩ 500억</span></div><div class="bar-track"><div class="bar-fill" data-w="83"></div></div></div>
+          <div><div class="mbar-top"><span>전략광물 공급 규모</span><span>₩ 100억</span></div><div class="bar-track"><div class="bar-fill" data-w="17"></div></div></div>
+          <div><div class="mbar-top"><span>글로벌 파트너십</span><span>한·중 4개사+</span></div><div class="bar-track"><div class="bar-fill" data-w="40"></div></div></div>
+          <div><div class="mbar-top"><span>2030 목표 매출</span><span>₩ 600억</span></div><div class="bar-track"><div class="bar-fill" data-w="100"></div></div></div>
+        </div>
+      </div>
+      <div class="fu d2">
+        <div class="v-sub-title">성장 로드맵</div>
+        <div class="tl">
+          <div class="tl-item"><div class="tl-side"><div class="tl-dot"></div><div class="tl-conn"></div></div><div class="tl-body"><div class="tl-yr">2025</div><h4>창립 &amp; 기반 구축</h4><p>주식회사 에이브릿지 설립. 중국 정부 쌀 3만 톤·옥수수 30만 톤 쿼터 확보. 전략광물 공급망 구축.</p></div></div>
+          <div class="tl-item"><div class="tl-side"><div class="tl-dot"></div><div class="tl-conn"></div></div><div class="tl-body"><div class="tl-yr">2026</div><h4>사업 확장</h4><p>농산물·광물 포트폴리오 확대. 동남아시아 시장 진출. 한·중 공급망 고도화.</p></div></div>
+          <div class="tl-item"><div class="tl-side"><div class="tl-dot"></div><div class="tl-conn"></div></div><div class="tl-body"><div class="tl-yr">2028</div><h4>글로벌 브리지 확립</h4><p>아시아 주요 시장 공급망 완성. 희귀광물 전 과정 통합 시스템 완성. 매출 500억 달성.</p></div></div>
+          <div class="tl-item"><div class="tl-side"><div class="tl-dot"></div><div class="tl-conn"></div></div><div class="tl-body"><div class="tl-yr">2030</div><h4>지속 가능한 미래</h4><p>매출 600억 달성. 글로벌 농산물·자원 무역의 새로운 표준 수립. 지속 가능한 글로벌 브리지.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PARTNERS ══ -->
+<section id="partners">
+  <div class="inner">
+    <div class="s-label fu">Partners</div>
+    <h2 class="s-title fu d1">글로벌 파트너</h2>
+    <p class="s-desc fu d2">에이브릿지는 중국 현지의 신뢰할 수 있는 전략적 파트너사들과 협력하여 안정적이고 투명한 공급망을 구축합니다.</p>
+    <div class="p-grid">
+      <div class="p-card fu d1"><div class="p-num">01</div><div class="p-info"><h4>중국 정부 공인 쌀 수출 파트너</h4><p>중국 정부의 공식 수출 쿼터를 기반으로 한 합법적이고 안정적인 쌀 공급 파트너.</p><div class="p-tags"><span class="pt g">공식 쿼터</span><span class="pt gr">농산물</span><span class="pt gr">쌀</span></div></div></div>
+      <div class="p-card fu d2"><div class="p-num">02</div><div class="p-info"><h4>중국 현지 옥수수 전략 파트너</h4><p>30만 톤 옥수수 수출 쿼터를 함께 확보한 중국 현지 전략적 협력사.</p><div class="p-tags"><span class="pt g">전략 파트너십</span><span class="pt gr">곡물</span><span class="pt gr">옥수수</span></div></div></div>
+      <div class="p-card fu d3"><div class="p-num">03</div><div class="p-info"><h4>하프늄·희귀광물 공급 파트너</h4><p>중국 현지의 전략적 파트너사. 하프늄, 리튬, 니켈, 코발트, 희토류 등 첨단 산업용 희귀광물 공급.</p><div class="p-tags"><span class="pt g">희귀광물</span><span class="pt gr">하프늄</span><span class="pt gr">리튬</span><span class="pt gr">희토류</span></div></div></div>
+      <div class="p-card fu d4"><div class="p-num">04</div><div class="p-info"><h4>아시아 시장 유통 파트너</h4><p>한국을 비롯한 아시아 주요 시장의 식량 공급 안정화를 위한 현지 유통 파트너 네트워크.</p><div class="p-tags"><span class="pt g">유통 네트워크</span><span class="pt gr">한국</span><span class="pt gr">동남아시아</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section id="contact">
+  <div class="inner">
+    <div class="s-label fu">Contact</div>
+    <h2 class="s-title fu d1">문의하기</h2>
+    <p class="s-desc fu d2">농산물 수입·수출, 전략광물 공급, 파트너십에 대한 문의를 환영합니다. 빠르게 검토 후 연락드리겠습니다.</p>
+    <div class="c-grid">
+      <div class="c-cards fu d1">
+        <div class="c-card"><div class="ico">🏢</div><h4>본사</h4><p>광주광역시 북구 부남길26번길 21, 1층</p></div>
+        <div class="c-card"><div class="ico">👤</div><h4>대표이사</h4><p>이세아<br/>LEE SE AH</p></div>
+        <div class="c-card"><div class="ico">🌾</div><h4>농산물 문의</h4><p>쌀 · 옥수수 · 버섯<br/>수입·수출 상담</p></div>
+      </div>
+      <div class="c-form fu d2">
+        <h3>문의 양식</h3>
+        <form id="contactForm" onsubmit="submitForm(event)">
+          <input type="hidden" name="access_key" value="776f43bf-0d46-4608-831b-79ac3b1bf44a"/>
+          <input type="hidden" name="subject" value="[에이브릿지] 홈페이지 문의"/>
+          <input type="hidden" name="from_name" value="에이브릿지 홈페이지"/>
+          <div class="f-row">
+            <div class="fg"><label>회사명</label><input type="text" name="company" placeholder="회사명" required/></div>
+            <div class="fg"><label>담당자명</label><input type="text" name="name" placeholder="성함" required/></div>
+          </div>
+          <div class="f-row">
+            <div class="fg"><label>연락처</label><input type="tel" name="phone" placeholder="연락처"/></div>
+            <div class="fg"><label>이메일</label><input type="email" name="email" placeholder="이메일" required/></div>
+          </div>
+          <div class="fg">
+            <label>문의 유형</label>
+            <select name="inquiry_type">
+              <option value="">문의 유형 선택</option>
+              <option>농산물 (쌀) 수입 문의</option>
+              <option>농산물 (옥수수) 수입 문의</option>
+              <option>농산물 (버섯) 수입 문의</option>
+              <option>전략광물 (하프늄) 공급 문의</option>
+              <option>전략광물 (리튬·니켈·코발트) 공급 문의</option>
+              <option>희토류 공급 문의</option>
+              <option>파트너십 제안</option>
+              <option>기타</option>
+            </select>
+          </div>
+          <div class="fg"><label>문의 내용</label><textarea name="message" placeholder="문의 내용을 입력하세요..."></textarea></div>
+          <button type="submit" class="f-btn" id="fbtn">문의 보내기 →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="f-inner">
+    <div class="f-top">
+      <div class="f-brand">
+        <div class="lm">ABRIDGE<em></em></div>
+        <p>신뢰와 무역으로 세상을 잇는 에이브릿지. 한국과 중국을 거점으로 농산물과 전략자원을 안정적으로 공급하며, 지속 가능한 글로벌 공급망을 구축합니다.</p>
+        <p style="margin-top:.6rem;font-size:.72rem;color:var(--text3)">Bridge the World with Trust &amp; Trade</p>
+      </div>
+      <div class="f-links"><h5>회사</h5><ul><li><a href="#about">회사 소개</a></li><li><a href="#vision">비전 &amp; 로드맵</a></li><li><a href="#partners">파트너</a></li><li><a href="#contact">문의하기</a></li></ul></div>
+      <div class="f-links"><h5>사업분야</h5><ul><li><a href="#business">농산물 무역</a></li><li><a href="#business">전략광물 공급</a></li><li><a href="#achievements">주요 성과</a></li></ul></div>
+      <div class="f-links"><h5>주요 품목</h5><ul><li><a href="#business">쌀 (Rice)</a></li><li><a href="#business">옥수수 (Corn)</a></li><li><a href="#business">하프늄 (Hafnium)</a></li><li><a href="#business">리튬 · 니켈 · 코발트</a></li><li><a href="#business">희토류 원소 (REE)</a></li></ul></div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2025 주식회사 에이브릿지 (ABRIDGE Agriculture &amp; Trade Co., Ltd.) All rights reserved.</span>
+      <span>광주광역시 북구 부남길26번길 21, 1층 · Bridge the World with Trust &amp; Trade</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Intersection Observer
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('on');
+        // animate bars
+        e.target.querySelectorAll('.bar-fill[data-w]').forEach(b => {
+          setTimeout(() => b.style.width = b.dataset.w + '%', 250);
+        });
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fu').forEach(el => io.observe(el));
+
+  // Vision section bars
+  const vio = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.querySelectorAll('.bar-fill[data-w]').forEach(b => {
+          setTimeout(() => b.style.width = b.dataset.w + '%', 300);
+        });
+      }
+    });
+  }, { threshold: 0.15 });
+  const vs = document.getElementById('vision');
+  if (vs) vio.observe(vs);
+
+  // Tab switch
+  function switchTab(id, btn) {
+    document.querySelectorAll('.tc').forEach(t => t.classList.remove('on'));
+    document.querySelectorAll('.tab').forEach(b => b.classList.remove('on'));
+    document.getElementById('tc-' + id).classList.add('on');
+    btn.classList.add('on');
+    document.querySelectorAll('#tc-' + id + ' .fu').forEach(el => el.classList.add('on'));
+  }
+
+  // Mobile menu
+  let open = false;
+  function toggleMenu() {
+    open = !open;
+    document.getElementById('mmenu').classList.toggle('open', open);
+  }
+  function cm() { open = false; document.getElementById('mmenu').classList.remove('open'); }
+
+  // Form
+  async function submitForm(e) {
+    e.preventDefault();
+    const form = e.target;
+    const btn = document.getElementById('fbtn');
+    btn.textContent = '전송 중...';
+    btn.disabled = true;
+
+    const data = new FormData(form);
+    const json = Object.fromEntries(data.entries());
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(json)
+      });
+      const result = await res.json();
+      if (result.success) {
+        btn.textContent = '✓ 문의가 전송되었습니다';
+        btn.style.background = '#16a34a';
+        form.reset();
+      } else {
+        btn.textContent = '전송 실패 — 다시 시도해주세요';
+        btn.style.background = '#dc2626';
+        btn.disabled = false;
+      }
+    } catch {
+      btn.textContent = '전송 실패 — 다시 시도해주세요';
+      btn.style.background = '#dc2626';
+      btn.disabled = false;
+    }
+  }
+
+  // Nav highlight
+  const secs = document.querySelectorAll('section[id]');
+  const nls = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let cur = '';
+    secs.forEach(s => { if (window.scrollY >= s.offsetTop - 100) cur = s.id; });
+    nls.forEach(a => { a.style.color = a.getAttribute('href') === '#' + cur ? 'var(--green)' : ''; });
+  });
+</script>
+</body>
+</html>
