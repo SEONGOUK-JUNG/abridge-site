@@ -14,6 +14,10 @@
   <meta name="google-site-verification" content="F41MiMC3rvZG5oOCMVR8yOyf0wuSOJXp2iRcgfm03ak" />
   <meta name="naver-site-verification" content="4adcb70041e0bb53870b4649f5d5197ff15c0669" />
   <link rel="canonical" href="https://www.abridge.co.kr/" />
+  <link rel="alternate" hreflang="ko" href="https://www.abridge.co.kr/" />
+  <link rel="alternate" hreflang="en" href="https://www.abridge.co.kr/index_en.html" />
+  <link rel="alternate" hreflang="zh" href="https://www.abridge.co.kr/index_zh.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.abridge.co.kr/" />
 
   <!-- ══ Open Graph (SNS 공유) ══ -->
   <meta property="og:type" content="website" />
@@ -146,6 +150,12 @@
     .nav-links a { font-size:.83rem; font-weight:500; color:var(--text2); transition:color .2s; }
     .nav-links a:hover { color:var(--green); }
     .nav-right { display:flex; align-items:center; gap:.9rem; }
+    .lang-switch { display:flex; gap:.6rem; font-size:.72rem; font-weight:700; color:var(--text2); letter-spacing:.5px; padding-right:.4rem; border-right:1px solid var(--border); margin-right:.4rem; }
+    .lang-switch a { transition:color .2s; }
+    .lang-switch a:hover { color:var(--green); }
+    .lang-switch a.active { color:var(--green); }
+    .m-lang { display:flex; gap:1rem; font-size:.85rem; font-weight:700; padding-top:.6rem; }
+    .m-lang a.active { color:var(--green); }
     .nav-cta {
       background:var(--green); color:#0a0a0a; font-weight:800;
       font-size:.8rem; padding:9px 22px; border-radius:4px; letter-spacing:.5px;
@@ -567,6 +577,11 @@
       <li><a href="#contact">문의</a></li>
     </ul>
     <div class="nav-right">
+      <div class="lang-switch">
+        <a href="index.html" class="active">KR</a>
+        <a href="index_en.html">EN</a>
+        <a href="index_zh.html">中</a>
+      </div>
       <a href="#contact" class="nav-cta">문의하기</a>
       <img src="logo.png" alt="ABRIDGE 로고" class="logo-img logo-desktop" />
     </div>
@@ -582,6 +597,7 @@
   <a href="#vision" onclick="cm()">비전</a>
   <a href="#partners" onclick="cm()">파트너</a>
   <a href="#contact" onclick="cm()">문의</a>
+  <div class="m-lang"><a href="index.html" class="active">KR</a><a href="index_en.html">EN</a><a href="index_zh.html">中</a></div>
 </div>
 
 <!-- ══ HERO ══ -->
