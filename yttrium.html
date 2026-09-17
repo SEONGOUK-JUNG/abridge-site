@@ -55,6 +55,21 @@
   .uses div{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:15px 17px}
   .uses b{display:block;color:var(--bright);margin-bottom:5px;font-size:15px}
   .uses span{font-size:13.5px;color:var(--muted)}
+  .rfq{display:grid;gap:14px;margin-top:6px}
+  .rfq .r2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .rfq label{display:grid;gap:6px;font-size:13.5px;color:var(--muted)}
+  .rfq input,.rfq select,.rfq textarea{font:inherit;font-size:15px;padding:11px 13px;border-radius:9px;
+    border:1px solid var(--line);background:var(--panel);color:var(--text);width:100%}
+  .rfq textarea{resize:vertical}
+  .rfq input:focus,.rfq select:focus,.rfq textarea:focus{outline:2px solid var(--green);outline-offset:1px}
+  .rfq button{font:inherit;font-size:15px;font-weight:700;padding:14px;border:0;border-radius:9px;
+    background:var(--green);color:#08130b;cursor:pointer}
+  .rfq button:disabled{opacity:.75;cursor:default}
+  .rfq button.ok{background:#2f9e54;color:#fff}
+  .rfq button.bad{background:#b4483c;color:#fff}
+  .rfq .hint{margin:0;font-size:12.5px;color:var(--muted)}
+  .rfq .hp{position:absolute;left:-9999px;opacity:0}
+  @media (max-width:560px){.rfq .r2{grid-template-columns:1fr}}
   footer{border-top:1px solid var(--line);margin-top:46px;padding-top:20px;font-size:13px;color:var(--muted)}
   footer a{text-decoration:none}
 </style>
@@ -102,10 +117,63 @@
 </dl>
 
 <div class="cta">
-  <a href="mailto:koreagwangju@gmail.com?subject=%EC%82%B0%ED%99%94%EC%9D%B4%ED%8A%B8%EB%A5%A8%20%EA%B2%AC%EC%A0%81%20%EB%AC%B8%EC%9D%98&amp;body=%EC%9E%85%EB%8F%84(D50)%3A%20%0A%EC%88%98%EB%9F%89%3A%20%0A%EC%9A%A9%EB%8F%84%3A%20%0A%ED%9A%8C%EC%82%AC%EB%AA%85%3A%20%0A%EC%97%B0%EB%9D%BD%EC%B2%98%3A%20">단가·샘플 문의하기</a>
+  <a href="#rfq">단가 문의하기</a>
   <a class="ghost" href="https://chinanews.kr/ko/supply/yttrium.html" rel="noopener">이트륨 공급 규격 전체 보기</a>
   <a class="ghost" href="https://chinanews.kr/press/yttrium-oxide-supply-20260917.html" rel="noopener">공급 개시 안내</a>
 </div>
+
+
+<h2 id="rfq">단가 문의</h2>
+<p>아래에 적어 주시면 그날 기준 단가로 회신드립니다. 수출 허가 일정이 있어 필요 시기를 함께 적어 주시면 도움이 됩니다.</p>
+<form class="rfq" id="rfqForm" onsubmit="sendRfq(event)">
+  <input type="hidden" name="access_key" value="776f43bf-0d46-4608-831b-79ac3b1bf44a">
+  <input type="hidden" name="subject" value="[에이브릿지] 산화이트륨 단가 문의">
+  <input type="hidden" name="from_name" value="산화이트륨 페이지">
+  <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+  <div class="r2">
+    <label>회사명<input type="text" name="company" required placeholder="회사명"></label>
+    <label>담당자<input type="text" name="name" required placeholder="성함"></label>
+  </div>
+  <div class="r2">
+    <label>이메일<input type="email" name="email" required placeholder="회신받을 이메일"></label>
+    <label>연락처<input type="tel" name="phone" placeholder="연락처"></label>
+  </div>
+  <div class="r2">
+    <label>입도
+      <select name="입도">
+        <option value="">고르세요</option>
+        <option>D50 1~2µm</option>
+        <option>D50 3~4µm</option>
+        <option>D50 5~7µm</option>
+        <option>아직 정하지 못함 · 상담 필요</option>
+        <option>그 밖의 규격 (4N · 조립분 · YSZ 등)</option>
+      </select>
+    </label>
+    <label>수량<input type="text" name="수량" placeholder="예: 1,000kg / 월 2톤"></label>
+  </div>
+  <div class="r2">
+    <label>용도<input type="text" name="용도" placeholder="예: 챔버 코팅용 용사 분말"></label>
+    <label>필요 시기<input type="text" name="필요시기" placeholder="예: 2027년 1월 입고 희망"></label>
+  </div>
+  <label>남기실 말씀<textarea name="message" rows="4" placeholder="규격서가 있으시면 주요 항목을 적어 주세요"></textarea></label>
+  <button type="submit" id="rfqBtn">문의 보내기</button>
+  <p class="hint">보내 주신 내용은 문의 회신에만 씁니다.</p>
+</form>
+<script>
+async function sendRfq(e){
+  e.preventDefault();
+  const form=e.target, btn=document.getElementById('rfqBtn');
+  btn.textContent='보내는 중…'; btn.disabled=true;
+  const json=Object.fromEntries(new FormData(form).entries());
+  try{
+    const res=await fetch('https://api.web3forms.com/submit',{method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(json)});
+    const out=await res.json();
+    if(out.success){ btn.textContent='보냈습니다. 곧 회신드리겠습니다'; btn.classList.add('ok'); form.reset(); }
+    else { btn.textContent='보내지 못했습니다. 다시 눌러 주세요'; btn.classList.add('bad'); btn.disabled=false; }
+  }catch(err){ btn.textContent='보내지 못했습니다. 다시 눌러 주세요'; btn.classList.add('bad'); btn.disabled=false; }
+}
+</script>
 
 <h2>공급하는 곳</h2>
 <p>주식회사 에이브릿지는 광주광역시에 있는 한·중 무역법인입니다. 희토류 산화물과 금속, 중국산 반도체 소재, 고순도 구리를 중국 생산자와 직거래로 들여옵니다. aT 쌀 국영무역 자격을 보유하고 있으며, 2026년 6월에는 반도체 SiC 포커스링용 CVD 장비를 중국에 직접 수출했습니다. 중국 원자재 시세는 그룹 터미널 <a href="https://chinanews.kr/ko/" rel="noopener">chinanews.kr</a>에서 매일 공개합니다.</p>
