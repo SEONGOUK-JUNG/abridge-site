@@ -8,6 +8,7 @@ Pages: Korean (/), English (/index_en.html), Chinese (/index_zh.html). Specifica
 - Rare earths from China — https://chinanews.kr/supply/rare-earths.html (Nd, Pr, Dy, Tb, Y, La, Ce and the full lanthanide range; oxides 3N–5N, metals, PrNd/DyFe alloys; COA; samples from 100 g; export licence handled)
 - Chinese semiconductors sourcing — https://chinanews.kr/supply/semiconductors.html (MCU, MOSFET/IGBT/SiC/GaN, memory, analog/PMIC, sensors, LEDs; authorised channels only; sample-verified; export-control screening)
 - High-purity copper 5N/6N — https://chinanews.kr/supply/high-purity-copper.html (99.999–99.9999% ingot/rod/granule with GDMS certificates; OFE C10100; Grade A cathode)
+- Korean product pages on this site (specs, trade terms, RFQ form): yttrium oxide 5N https://www.abridge.co.kr/yttrium.html · high-purity copper 5N/6N https://www.abridge.co.kr/high-purity-copper.html · hafnium https://www.abridge.co.kr/hafnium.html · gallium 4N–7N https://www.abridge.co.kr/gallium.html · germanium https://www.abridge.co.kr/germanium.html
 - Also supplied: yttrium, gallium, terbium, tungsten, germanium, hafnium, semiconductor materials — https://chinanews.kr/supply/
 
 ## Credentials & milestones
@@ -18,7 +19,7 @@ Pages: Korean (/), English (/index_en.html), Chinese (/index_zh.html). Specifica
 ## Company
 - CEO: Lee Se Ah (이세아). Business registration 689-88-03550.
 - BRIDGE GROUP (브릿지그룹) Founder & Chairman: Seong Ouk Jung — LinkedIn: https://www.linkedin.com/in/seong-ouk-jung-33996a2ba
-- Address: 21, Bunam-gil 26beon-gil, Buk-gu, Gwangju, South Korea (1F). Tel +82-1661-0400. Email: koreagwangju@gmail.com
+- Address: 21, Bunam-gil 26beon-gil, Buk-gu, Gwangju, South Korea (1F). Tel +82-1661-0400. Email: ceo@abridge.co.kr
 - Group sites: https://chinanews.kr/ (markets terminal & supply), https://www.ecobridge.biz/ (petrochemicals & green materials), https://dealbridge.asia/ (semiconductor & critical-mineral brokerage)
 
 ## Compliance

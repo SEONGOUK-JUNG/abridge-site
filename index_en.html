@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- ══ SEO ══ -->
-  <title>ABRIDGE | Rare Earths · Chinese Semiconductors · 5N/6N High-Purity Copper Supply · HDPE·LLDPE·LDPE · PBAT · aT State Trading · Korea</title>
+  <title>ABRIDGE Korea | Rare Earths, Chinese Semiconductors &amp; 5N/6N Copper</title>
   <meta name="description" content="ABRIDGE Agriculture & Trade Co., Ltd. supplies rare earth oxides and metals, Chinese semiconductors and 5N/6N high-purity copper direct from licensed Chinese producers, alongside HDPE/LLDPE/LDPE distribution, PBAT/PLA green materials, aT state-trading grains and hafnium — an integrated Korea–China supply chain company." />
   <meta name="keywords" content="HDPE,LLDPE,LDPE,Polyethylene,Chemical Distribution,ABRIDGE,BOPP,BOPET,Nylon Film,PBAT,PLA,Biodegradable,Mulching Film,aT State Trading,TRQ,Rice Import,Corn Import,Hafnium,Rare Earth,Lithium,Nickel,Cobalt,Strategic Minerals,Korea-China Trade,Hubei Yihua,Xiaocao,Heilongjiang Jinji" />
   <meta name="author" content="ABRIDGE Agriculture &amp; Trade Co., Ltd." />
@@ -19,19 +19,19 @@
   <!-- ══ Open Graph ══ -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="ABRIDGE" />
-  <meta property="og:title" content="ABRIDGE | Rare Earths · Chinese Semiconductors · 5N/6N Copper · HDPE·LLDPE·LDPE · PBAT · aT State Trading" />
+  <meta property="og:title" content="ABRIDGE Korea | Rare Earths, Chinese Semiconductors &amp; 5N/6N Copper" />
   <meta property="og:description" content="Producer-direct from China: rare earth oxides and metals, Chinese semiconductors, 5N/6N high-purity copper. Plus HDPE/LLDPE/LDPE distribution, PBAT green materials, aT state trading, hafnium." />
   <meta property="og:url" content="https://www.abridge.co.kr/index_en.html" />
-  <meta property="og:image" content="https://www.abridge.co.kr/hero.png" />
+  <meta property="og:image" content="https://www.abridge.co.kr/og-image.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="en_US" />
 
   <!-- ══ Twitter Card ══ -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="ABRIDGE | Rare Earths · Chinese Semiconductors · 5N/6N Copper · HDPE·LLDPE·LDPE · PBAT · aT State Trading" />
+  <meta name="twitter:title" content="ABRIDGE Korea | Rare Earths, Chinese Semiconductors &amp; 5N/6N Copper" />
   <meta name="twitter:description" content="Producer-direct from China: rare earth oxides and metals, Chinese semiconductors, 5N/6N high-purity copper. Plus HDPE/LLDPE/LDPE distribution, PBAT green materials, aT state trading, hafnium." />
-  <meta name="twitter:image" content="https://www.abridge.co.kr/hero.png" />
+  <meta name="twitter:image" content="https://www.abridge.co.kr/og-image.jpg" />
 
   <!-- ══ JSON-LD ══ -->
   <script type="application/ld+json">
@@ -57,7 +57,7 @@
   },
   "contactPoint": {
     "@type": "ContactPoint",
-    "email": "koreagwangju@gmail.com",
+    "email": "ceo@abridge.co.kr",
     "contactType": "sales",
     "availableLanguage": [
       "Korean",
@@ -152,7 +152,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="preload" as="image" href="hero.webp" type="image/webp" fetchpriority="high" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="icon" href="/icon-512.png" type="image/png" sizes="512x512" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -204,14 +208,15 @@
     .m-lang a.active { color:var(--green); }
 
     #hero { min-height:100vh; padding-top:var(--nav-h); position:relative; display:flex; align-items:center; overflow:hidden; }
-    .hero-bg { position:absolute; inset:0; background: linear-gradient(105deg, rgba(22,22,22,1) 0%, rgba(22,22,22,.88) 45%, rgba(22,22,22,.25) 100%), url('hero.png') center/cover no-repeat; }
+    .hero-bg { position:absolute; inset:0; background: linear-gradient(105deg, rgba(22,22,22,1) 0%, rgba(22,22,22,.88) 45%, rgba(22,22,22,.25) 100%), url('hero.webp') center/cover no-repeat; }
     .hero-wrap { position:relative; z-index:1; width:100%; max-width:1380px; margin:0 auto; padding:0 6%; display:grid; grid-template-columns:1fr 360px; gap:3.5rem; align-items:start; }
     .hero-badge { display:inline-flex; align-items:center; gap:8px; background:rgba(74,222,128,.1); border:1px solid rgba(74,222,128,.28); padding:6px 16px; border-radius:20px; font-size:.7rem; font-weight:800; letter-spacing:2.5px; color:var(--green); text-transform:uppercase; margin-bottom:1.6rem; }
+    .hero-badge { margin-top:0; line-height:1.5; }
     .hero-badge::before { content:''; width:6px; height:6px; background:var(--green); border-radius:50%; animation:blink 2s infinite; }
     @keyframes blink { 0%,100%{opacity:1}50%{opacity:.3} }
     @keyframes rainbow { 0%{background:#ff0000}14%{background:#ff7700}28%{background:#ffee00}42%{background:#00cc44}57%{background:#0088ff}71%{background:#4400cc}85%{background:#8800cc}100%{background:#ff0000} }
-    h1.hero-title { font-size:clamp(2.5rem,5.2vw,4.4rem); font-weight:900; line-height:1.08; letter-spacing:-1.5px; margin-bottom:1.6rem; }
-    h1.hero-title .green { color:var(--green); }
+    .hero-title { font-size:clamp(2.5rem,5.2vw,4.4rem); font-weight:900; line-height:1.08; letter-spacing:-1.5px; margin-bottom:1.6rem; }
+    .hero-title .green { color:var(--green); }
     .hero-sub { font-size:1rem; color:var(--text2); max-width:500px; line-height:1.85; margin-bottom:2.5rem; }
     .hero-btns { display:flex; gap:1rem; flex-wrap:wrap; }
     .btn-p { background:var(--green); color:#0a0a0a; font-weight:800; padding:14px 34px; border-radius:5px; font-size:.88rem; letter-spacing:.4px; transition:opacity .2s; }
@@ -398,7 +403,7 @@
       .c-grid { gap:2rem; }
       .hero-btns { flex-direction:column; }
       .btn-p, .btn-o { text-align:center; padding:15px 28px; }
-      h1.hero-title { font-size:clamp(2rem,8vw,3rem); }
+      .hero-title { font-size:clamp(2rem,8vw,3rem); }
       .hero-sub { font-size:.92rem; }
       .cat-bar-inner { grid-template-columns:1fr 1fr; gap:0; }
       .cat-item { padding:.7rem 1rem; }
@@ -414,7 +419,7 @@
       .cat-txt strong { font-size:.9rem; }
       .cat-txt span { font-size:.78rem; }
       .hero-badge { font-size:.62rem; letter-spacing:1.5px; margin-top:2rem; }
-      h1.hero-title { font-size:clamp(1.75rem,8.5vw,2.5rem); letter-spacing:-0.5px; }
+      .hero-title { font-size:clamp(1.75rem,8.5vw,2.5rem); letter-spacing:-0.5px; }
       .vals { grid-template-columns:1fr; }
       .c-cards { grid-template-columns:1fr; }
       .c-card { display:flex; align-items:center; gap:.8rem; padding:.9rem 1rem; }
@@ -436,7 +441,7 @@
 <nav>
   <div class="nav-inner">
     <a href="#hero" class="logo-wrap">
-      <img src="logo.png" alt="ABRIDGE Logo" class="logo-img logo-mobile" />
+      <img src="logo.webp" width="280" height="280" alt="ABRIDGE Logo" class="logo-img logo-mobile" />
       <div class="logo-txt">
         <span class="logo-main">ABRIDGE<em></em></span>
         <span class="logo-sub">Agriculture &amp; Trade Co., Ltd.</span>
@@ -458,7 +463,7 @@
         <a href="index_zh.html">中</a>
       </div>
       <a href="#contact" class="nav-cta">Contact</a>
-      <img src="logo.png" alt="ABRIDGE Logo" class="logo-img logo-desktop" />
+      <img src="logo.webp" width="280" height="280" alt="ABRIDGE Logo" class="logo-img logo-desktop" />
     </div>
     <div class="burger" id="burger" onclick="toggleMenu()">
       <span></span><span></span><span></span>
@@ -479,12 +484,12 @@
   <div class="hero-bg"></div>
   <div class="hero-wrap">
     <div>
-      <div class="hero-badge fu">Food Security · Green Material · Strategic Resources</div>
-      <h1 class="hero-title fu d1">
+      <h1 class="hero-badge fu">ABRIDGE Korea · Rare Earths, Semiconductors &amp; High-Purity Copper</h1>
+      <p class="hero-title fu d1">
         The Path to<br/>
         <span class="green">Sustainable</span><br/>
         Future
-      </h1>
+      </p>
       <p class="hero-sub fu d2">
         ABRIDGE bridges the world through trust and trade.<br/>
         Anchored in Korea and China, we integrate food security, green materials,<br/>
@@ -535,9 +540,10 @@
     <div class="s-label fu">Core Supply</div>
     <h2 class="s-title fu d1">Core Supply Lines</h2>
     <p class="s-desc fu d2">Three product lines we supply direct from Chinese producers. Specifications, live China prices and RFQ forms are on our group market terminal <a href="https://chinanews.kr/supply/" target="_blank" rel="noopener" style="color:var(--green);text-decoration:underline">chinanews.kr</a>.</p>
+    <p class="s-desc item-links fu d2" style="margin-top:.8rem">Product pages (Korean): <a href="/yttrium.html" style="color:var(--green);text-decoration:underline">Yttrium oxide</a> · <a href="/high-purity-copper.html" style="color:var(--green);text-decoration:underline">High-purity copper</a> · <a href="/hafnium.html" style="color:var(--green);text-decoration:underline">Hafnium</a> · <a href="/gallium.html" style="color:var(--green);text-decoration:underline">Gallium</a> · <a href="/germanium.html" style="color:var(--green);text-decoration:underline">Germanium</a></p>
     <div class="biz-grid" style="margin-top:2.4rem">
         <div class="biz-card fu">
-          <div class="biz-img"><img src="ree.png" alt="Rare earth oxides, metals and alloys" loading="lazy"/></div>
+          <div class="biz-img"><img src="ree.webp" width="384" height="477" alt="Rare earth oxides, metals and alloys" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">Core Supply</span>
             <h3>Rare Earths from China</h3>
@@ -586,7 +592,7 @@
   <div class="inner">
     <div class="about-grid">
       <div class="about-img-wrap fu">
-        <img src="rice.png" alt="ABRIDGE Agricultural Products" loading="lazy"/>
+        <img src="rice.webp" width="720" height="1080" alt="ABRIDGE Agricultural Products" loading="lazy"/>
       </div>
       <div>
         <div class="s-label fu">About ABRIDGE</div>
@@ -622,7 +628,7 @@
     <div class="tc on" id="tc-agri">
       <div class="biz-grid">
         <div class="biz-card fu">
-          <div class="biz-img"><img src="rice1.png" alt="Rice" loading="lazy"/></div>
+          <div class="biz-img"><img src="rice1.webp" width="640" height="480" alt="Rice" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">aT State Trading</span>
             <h3>Chinese Rice</h3>
@@ -635,7 +641,7 @@
           </div>
         </div>
         <div class="biz-card fu d1">
-          <div class="biz-img"><img src="cone.png" alt="Corn" loading="lazy"/></div>
+          <div class="biz-img"><img src="cone.webp" width="635" height="396" alt="Corn" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">Key Product</span>
             <h3>Corn</h3>
@@ -648,7 +654,7 @@
           </div>
         </div>
         <div class="biz-card fu d2">
-          <div class="biz-img"><img src="mushroom.png" alt="Mushroom" loading="lazy"/></div>
+          <div class="biz-img"><img src="mushroom.webp" width="640" height="961" alt="Mushroom" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">Key Product</span>
             <h3>Mushrooms</h3>
@@ -666,7 +672,7 @@
     <div class="tc" id="tc-green">
       <div class="biz-grid">
         <div class="biz-card fu">
-          <div class="biz-img"><img src="img/pbat.jpg" alt="PBAT Resin" loading="lazy"/></div>
+          <div class="biz-img"><img src="img/pbat.jpg" width="390" height="291" alt="PBAT Resin" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">PBAT Resin</span>
             <h3>PBAT (Hubei Yihua)</h3>
@@ -679,7 +685,7 @@
           </div>
         </div>
         <div class="biz-card fu d1">
-          <div class="biz-img"><img src="img/pbat_master.jpg" alt="PBAT Modified Masterbatch" loading="lazy"/></div>
+          <div class="biz-img"><img src="img/pbat_master.jpg" width="552" height="407" alt="PBAT Modified Masterbatch" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">PBAT Modified Master</span>
             <h3>PBAT Modified Masterbatch</h3>
@@ -692,7 +698,7 @@
           </div>
         </div>
         <div class="biz-card fu d2">
-          <div class="biz-img"><img src="img/pla.jpg" alt="PLA Resin" loading="lazy"/></div>
+          <div class="biz-img"><img src="img/pla.jpg" width="598" height="339" alt="PLA Resin" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">PLA Resin</span>
             <h3>PLA (Polylactic Acid)</h3>
@@ -705,7 +711,7 @@
           </div>
         </div>
         <div class="biz-card fu d3">
-          <div class="biz-img"><img src="img/mulch.jpg" alt="Biodegradable Mulching Film" loading="lazy"/></div>
+          <div class="biz-img"><img src="img/mulch.jpg" width="241" height="172" alt="Biodegradable Mulching Film" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">Mulching Film</span>
             <h3>Biodegradable Mulching Film</h3>
@@ -723,7 +729,7 @@
     <div class="tc" id="tc-chem">
       <div class="biz-grid">
         <div class="biz-card fu">
-          <div class="biz-img"><img src="img/hdpe.jpg" alt="HDPE" loading="lazy"/></div>
+          <div class="biz-img"><img src="img/hdpe.jpg" width="254" height="170" alt="HDPE" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">Current Focus · Importing Now</span>
             <h3>HDPE</h3>
@@ -736,7 +742,7 @@
           </div>
         </div>
         <div class="biz-card fu d1">
-          <div class="biz-img"><img src="img/lldpe.jpg" alt="LLDPE" loading="lazy"/></div>
+          <div class="biz-img"><img src="img/lldpe.jpg" width="207" height="184" alt="LLDPE" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">Current Focus · Importing Now</span>
             <h3>LLDPE</h3>
@@ -749,7 +755,7 @@
           </div>
         </div>
         <div class="biz-card fu d2">
-          <div class="biz-img"><img src="img/ldpe.jpg" alt="LDPE" loading="lazy"/></div>
+          <div class="biz-img"><img src="img/ldpe.jpg" width="204" height="188" alt="LDPE" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">Current Focus · Importing Now</span>
             <h3>LDPE</h3>
@@ -762,7 +768,7 @@
           </div>
         </div>
         <div class="biz-card fu d3">
-          <div class="biz-img"><img src="img/film.jpg" alt="BOPP BOPET Nylon" loading="lazy"/></div>
+          <div class="biz-img"><img src="img/film.jpg" width="297" height="188" alt="BOPP BOPET Nylon" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">Industrial Film</span>
             <h3>BOPP · BOPET · Nylon</h3>
@@ -780,7 +786,7 @@
     <div class="tc" id="tc-mineral">
       <div class="biz-grid">
         <div class="biz-card fu">
-          <div class="biz-img"><img src="hafnium.png" alt="Hafnium" loading="lazy"/></div>
+          <div class="biz-img"><img src="hafnium.webp" width="640" height="640" alt="Hafnium" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">Strategic Metal</span>
             <h3>Hafnium</h3>
@@ -792,7 +798,7 @@
           </div>
         </div>
         <div class="biz-card fu d1">
-          <div class="biz-img"><img src="mineral.png" alt="Lithium Nickel Cobalt" loading="lazy"/></div>
+          <div class="biz-img"><img src="mineral.webp" width="720" height="1080" alt="Lithium Nickel Cobalt" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">Strategic Metal</span>
             <h3>Lithium · Nickel · Cobalt</h3>
@@ -804,7 +810,7 @@
           </div>
         </div>
         <div class="biz-card fu d2">
-          <div class="biz-img"><img src="ree.png" alt="Rare Earth Elements" loading="lazy"/></div>
+          <div class="biz-img"><img src="ree.webp" width="384" height="477" alt="Rare Earth Elements" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">Strategic Metal</span>
             <h3>Rare Earth Elements (REE)</h3>

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- ══ 기본 SEO ══ -->
-  <title>에이브릿지 (ABRIDGE) | 희토류·반도체·고순도 구리 공급 · HDPE·LLDPE·LDPE 유통 · PBAT 친환경 소재 · aT 국영무역</title>
+  <title>에이브릿지 | 희토류·반도체·고순도 구리 한·중 공급</title>
   <meta name="description" content="주식회사 에이브릿지는 중국 생산자 직거래로 희토류 산화물·금속, 중국산 반도체, 고순도 구리 5N/6N을 공급하고, HDPE·LLDPE·LDPE 화학제품 유통, PBAT·PLA 친환경 소재, aT 국영무역(쌀·옥수수), 하프늄 등 전략광물을 취급하는 한·중 통합 공급망 기업입니다." />
   <meta name="keywords" content="HDPE,LLDPE,LDPE,HDPE수입,LLDPE수입,LDPE수입,폴리에틸렌수입,화학제품유통,화학원자재,플라스틱원료,에이브릿지,ABRIDGE,BOPP,BOPET,BOPP필름,BOPET필름,나일론필름,PBAT,PLA,생분해성수지,멀칭필름,친환경소재,aT국영무역,TRQ,쌀국영무역,쌀수입,옥수수수입,버섯수입,하프늄,희토류,리튬,니켈,코발트,전략광물,한·중무역,Hubei Yihua,호북의화,小草绿能,Heilongjiang Jinji,이세아" />
   <meta name="author" content="주식회사 에이브릿지" />
@@ -22,19 +22,19 @@
   <!-- ══ Open Graph (SNS 공유) ══ -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="에이브릿지 (ABRIDGE)" />
-  <meta property="og:title" content="에이브릿지 | 희토류 · 반도체 · 고순도 구리 5N/6N 공급 · HDPE·LLDPE·LDPE · PBAT · aT 국영무역" />
+  <meta property="og:title" content="에이브릿지 | 희토류·반도체·고순도 구리 한·중 공급" />
   <meta property="og:description" content="중국 생산자 직거래 — 희토류 산화물·금속, 중국산 반도체, 고순도 구리 5N/6N. HDPE·LLDPE·LDPE 유통, PBAT 친환경 소재, aT 국영무역, 하프늄. 한·중 통합 공급망." />
   <meta property="og:url" content="https://www.abridge.co.kr/" />
-  <meta property="og:image" content="https://www.abridge.co.kr/hero.png" />
+  <meta property="og:image" content="https://www.abridge.co.kr/og-image.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="ko_KR" />
 
   <!-- ══ Twitter Card ══ -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="에이브릿지 | 희토류 · 반도체 · 고순도 구리 5N/6N 공급 · HDPE·LLDPE·LDPE · PBAT · aT 국영무역" />
+  <meta name="twitter:title" content="에이브릿지 | 희토류·반도체·고순도 구리 한·중 공급" />
   <meta name="twitter:description" content="중국 생산자 직거래 — 희토류 산화물·금속, 중국산 반도체, 고순도 구리 5N/6N. HDPE·LLDPE·LDPE 유통, PBAT 친환경 소재, aT 국영무역, 하프늄. 한·중 통합 공급망." />
-  <meta name="twitter:image" content="https://www.abridge.co.kr/hero.png" />
+  <meta name="twitter:image" content="https://www.abridge.co.kr/og-image.jpg" />
 
   <!-- ══ 구조화 데이터 (JSON-LD) ══ -->
   <script type="application/ld+json">
@@ -60,7 +60,7 @@
   },
   "contactPoint": {
     "@type": "ContactPoint",
-    "email": "koreagwangju@gmail.com",
+    "email": "ceo@abridge.co.kr",
     "contactType": "sales",
     "availableLanguage": [
       "Korean",
@@ -164,7 +164,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="preload" as="image" href="hero.webp" type="image/webp" fetchpriority="high" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="icon" href="/icon-512.png" type="image/png" sizes="512x512" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
   <style>
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -263,7 +267,7 @@
       position:absolute; inset:0;
       background:
         linear-gradient(105deg, rgba(22,22,22,1) 0%, rgba(22,22,22,.88) 45%, rgba(22,22,22,.25) 100%),
-        url('hero.png') center/cover no-repeat;
+        url('hero.webp') center/cover no-repeat;
     }
     .hero-wrap {
       position:relative; z-index:1; width:100%; max-width:1380px;
@@ -277,6 +281,7 @@
       font-size:.7rem; font-weight:800; letter-spacing:2.5px;
       color:var(--green); text-transform:uppercase; margin-bottom:1.6rem;
     }
+    .hero-badge { margin-top:0; line-height:1.5; }
     .hero-badge::before {
       content:''; width:6px; height:6px; background:var(--green); border-radius:50%;
       animation: blink 2s infinite;
@@ -292,11 +297,11 @@
       85%  { background:#8800cc; }
       100% { background:#ff0000; }
     }
-    h1.hero-title {
+    .hero-title {
       font-size: clamp(2.5rem,5.2vw,4.4rem);
       font-weight:900; line-height:1.08; letter-spacing:-1.5px; margin-bottom:1.6rem;
     }
-    h1.hero-title .green { color:var(--green); }
+    .hero-title .green { color:var(--green); }
     .hero-sub {
       font-size:1rem; color:var(--text2); max-width:500px;
       line-height:1.85; margin-bottom:2.5rem;
@@ -599,7 +604,7 @@
       .c-grid { gap:2rem; }
       .hero-btns { flex-direction:column; }
       .btn-p, .btn-o { text-align:center; padding:15px 28px; }
-      h1.hero-title { font-size:clamp(2rem,8vw,3rem); }
+      .hero-title { font-size:clamp(2rem,8vw,3rem); }
       .hero-sub { font-size:.92rem; }
       .cat-bar-inner { grid-template-columns:1fr 1fr; gap:0; }
       .cat-item { padding:.7rem 1rem; }
@@ -618,7 +623,7 @@
       .cat-txt strong { font-size:.9rem; }
       .cat-txt span { font-size:.78rem; }
       .hero-badge { font-size:.62rem; letter-spacing:1.5px; margin-top:2rem; }
-      h1.hero-title { font-size:clamp(1.75rem,8.5vw,2.5rem); letter-spacing:-0.5px; }
+      .hero-title { font-size:clamp(1.75rem,8.5vw,2.5rem); letter-spacing:-0.5px; }
       .vals { grid-template-columns:1fr; }
       .c-cards { grid-template-columns:1fr; }
       .c-card { display:flex; align-items:center; gap:.8rem; padding:.9rem 1rem; }
@@ -643,7 +648,7 @@
 <nav>
   <div class="nav-inner">
     <a href="#hero" class="logo-wrap">
-      <img src="logo.png" alt="ABRIDGE 로고" class="logo-img logo-mobile" />
+      <img src="logo.webp" width="280" height="280" alt="ABRIDGE 로고" class="logo-img logo-mobile" />
       <div class="logo-txt">
         <span class="logo-main">ABRIDGE<em></em></span>
         <span class="logo-sub">Agriculture &amp; Trade Co., Ltd.</span>
@@ -665,7 +670,7 @@
         <a href="index_zh.html">中</a>
       </div>
       <a href="#contact" class="nav-cta">문의하기</a>
-      <img src="logo.png" alt="ABRIDGE 로고" class="logo-img logo-desktop" />
+      <img src="logo.webp" width="280" height="280" alt="ABRIDGE 로고" class="logo-img logo-desktop" />
     </div>
     <div class="burger" id="burger" onclick="toggleMenu()">
       <span></span><span></span><span></span>
@@ -687,12 +692,12 @@
   <div class="hero-bg"></div>
   <div class="hero-wrap">
     <div>
-      <div class="hero-badge fu">Food Security · Green Material · Strategic Resources</div>
-      <h1 class="hero-title fu d1">
+      <h1 class="hero-badge fu">에이브릿지 · 희토류 · 반도체 · 고순도 구리 공급</h1>
+      <p class="hero-title fu d1">
         The Path to<br/>
         <span class="green">Sustainable</span><br/>
         Future
-      </h1>
+      </p>
       <p class="hero-sub fu d2">
         신뢰와 무역으로 세상을 잇는 에이브릿지.<br/>
         한국과 중국을 거점으로 식량안보·친환경 소재·화학제품·전략광물을<br/>
@@ -744,9 +749,10 @@
     <div class="s-label fu">Core Supply</div>
     <h2 class="s-title fu d1">핵심 공급 품목</h2>
     <p class="s-desc fu d2">중국 생산자와 직거래로 공급하는 세 가지 핵심 품목입니다. 규격·중국 현물가·견적 요청은 그룹 마켓 터미널 <a href="https://chinanews.kr/ko/supply/" target="_blank" rel="noopener" style="color:var(--green);text-decoration:underline">chinanews.kr</a>에서 확인하실 수 있습니다.</p>
+    <p class="s-desc item-links fu d2" style="margin-top:.8rem">품목별 안내: <a href="/yttrium.html" style="color:var(--green);text-decoration:underline">산화이트륨</a> · <a href="/high-purity-copper.html" style="color:var(--green);text-decoration:underline">고순도 구리</a> · <a href="/hafnium.html" style="color:var(--green);text-decoration:underline">하프늄</a> · <a href="/gallium.html" style="color:var(--green);text-decoration:underline">갈륨</a> · <a href="/germanium.html" style="color:var(--green);text-decoration:underline">게르마늄</a></p>
     <div class="biz-grid" style="margin-top:2.4rem">
         <div class="biz-card fu">
-          <div class="biz-img"><img src="ree.png" alt="희토류 산화물·금속·합금" loading="lazy"/></div>
+          <div class="biz-img"><img src="ree.webp" width="384" height="477" alt="희토류 산화물·금속·합금" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">핵심 공급 품목</span>
             <h3>중국 희토류 공급</h3>
@@ -796,7 +802,7 @@
   <div class="inner">
     <div class="about-grid">
       <div class="about-img-wrap fu">
-        <img src="rice.png" alt="에이브릿지 농산물" loading="lazy"/>
+        <img src="rice.webp" width="720" height="1080" alt="에이브릿지 농산물" loading="lazy"/>
       </div>
       <div>
         <div class="s-label fu">About ABRIDGE</div>
@@ -834,7 +840,7 @@
     <div class="tc on" id="tc-agri">
       <div class="biz-grid">
         <div class="biz-card fu">
-          <div class="biz-img"><img src="rice1.png" alt="쌀" loading="lazy"/></div>
+          <div class="biz-img"><img src="rice1.webp" width="640" height="480" alt="쌀" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">aT 국영무역</span>
             <h3>중국산 쌀 (Rice)</h3>
@@ -847,7 +853,7 @@
           </div>
         </div>
         <div class="biz-card fu d1">
-          <div class="biz-img"><img src="cone.png" alt="옥수수" loading="lazy"/></div>
+          <div class="biz-img"><img src="cone.webp" width="635" height="396" alt="옥수수" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">주요품목</span>
             <h3>옥수수 (Corn)</h3>
@@ -860,7 +866,7 @@
           </div>
         </div>
         <div class="biz-card fu d2">
-          <div class="biz-img"><img src="mushroom.png" alt="버섯" loading="lazy"/></div>
+          <div class="biz-img"><img src="mushroom.webp" width="640" height="961" alt="버섯" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">주요품목</span>
             <h3>버섯류 (Mushroom)</h3>
@@ -879,7 +885,7 @@
     <div class="tc" id="tc-green">
       <div class="biz-grid">
         <div class="biz-card fu">
-          <div class="biz-img"><img src="img/pbat.jpg" alt="PBAT 수지" loading="lazy"/></div>
+          <div class="biz-img"><img src="img/pbat.jpg" width="390" height="291" alt="PBAT 수지" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">PBAT 수지</span>
             <h3>PBAT (Hubei Yihua)</h3>
@@ -892,7 +898,7 @@
           </div>
         </div>
         <div class="biz-card fu d1">
-          <div class="biz-img"><img src="img/pbat_master.jpg" alt="PBAT 개질 마스터" loading="lazy"/></div>
+          <div class="biz-img"><img src="img/pbat_master.jpg" width="552" height="407" alt="PBAT 개질 마스터" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">PBAT 개질 마스터</span>
             <h3>PBAT 개질 마스터배치</h3>
@@ -905,7 +911,7 @@
           </div>
         </div>
         <div class="biz-card fu d2">
-          <div class="biz-img"><img src="img/pla.jpg" alt="PLA 수지" loading="lazy"/></div>
+          <div class="biz-img"><img src="img/pla.jpg" width="598" height="339" alt="PLA 수지" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">PLA 수지</span>
             <h3>PLA (Polylactic Acid)</h3>
@@ -918,7 +924,7 @@
           </div>
         </div>
         <div class="biz-card fu d3">
-          <div class="biz-img"><img src="img/mulch.jpg" alt="생분해성 멀칭필름" loading="lazy"/></div>
+          <div class="biz-img"><img src="img/mulch.jpg" width="241" height="172" alt="생분해성 멀칭필름" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">멀칭필름</span>
             <h3>생분해성 멀칭필름</h3>
@@ -937,7 +943,7 @@
     <div class="tc" id="tc-chem">
       <div class="biz-grid">
         <div class="biz-card fu">
-          <div class="biz-img"><img src="img/hdpe.jpg" alt="HDPE" loading="lazy"/></div>
+          <div class="biz-img"><img src="img/hdpe.jpg" width="254" height="170" alt="HDPE" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">현 중점 · 원자재 수입중</span>
             <h3>HDPE</h3>
@@ -950,7 +956,7 @@
           </div>
         </div>
         <div class="biz-card fu d1">
-          <div class="biz-img"><img src="img/lldpe.jpg" alt="LLDPE" loading="lazy"/></div>
+          <div class="biz-img"><img src="img/lldpe.jpg" width="207" height="184" alt="LLDPE" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">현 중점 · 원자재 수입중</span>
             <h3>LLDPE</h3>
@@ -963,7 +969,7 @@
           </div>
         </div>
         <div class="biz-card fu d2">
-          <div class="biz-img"><img src="img/ldpe.jpg" alt="LDPE" loading="lazy"/></div>
+          <div class="biz-img"><img src="img/ldpe.jpg" width="204" height="188" alt="LDPE" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">현 중점 · 원자재 수입중</span>
             <h3>LDPE</h3>
@@ -976,7 +982,7 @@
           </div>
         </div>
         <div class="biz-card fu d3">
-          <div class="biz-img"><img src="img/film.jpg" alt="BOPP BOPET Nylon" loading="lazy"/></div>
+          <div class="biz-img"><img src="img/film.jpg" width="297" height="188" alt="BOPP BOPET Nylon" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">산업용 필름</span>
             <h3>BOPP · BOPET · Nylon</h3>
@@ -995,7 +1001,7 @@
     <div class="tc" id="tc-mineral">
       <div class="biz-grid">
         <div class="biz-card fu">
-          <div class="biz-img"><img src="hafnium.png" alt="하프늄" loading="lazy"/></div>
+          <div class="biz-img"><img src="hafnium.webp" width="640" height="640" alt="하프늄" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">전략광물</span>
             <h3>하프늄 (Hafnium)</h3>
@@ -1007,7 +1013,7 @@
           </div>
         </div>
         <div class="biz-card fu d1">
-          <div class="biz-img"><img src="mineral.png" alt="리튬 니켈 코발트" loading="lazy"/></div>
+          <div class="biz-img"><img src="mineral.webp" width="720" height="1080" alt="리튬 니켈 코발트" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">전략광물</span>
             <h3>리튬 · 니켈 · 코발트</h3>
@@ -1019,7 +1025,7 @@
           </div>
         </div>
         <div class="biz-card fu d2">
-          <div class="biz-img"><img src="ree.png" alt="희토류" loading="lazy"/></div>
+          <div class="biz-img"><img src="ree.webp" width="384" height="477" alt="희토류" loading="lazy"/></div>
           <div class="biz-body">
             <span class="biz-tag">전략광물</span>
             <h3>희토류 원소 (REE)</h3>
